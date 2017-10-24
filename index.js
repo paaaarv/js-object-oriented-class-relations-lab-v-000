@@ -9,8 +9,8 @@ class Driver{
     store.drivers.push(this)
   }
   trips(){
-    return store.trips.filter(trip => {
-      if (trip.userId === this.id){
+    return store.trips.filter(trips => {
+      if (trips.userId === this.id){
         return trip
       }
     })
