@@ -8,13 +8,7 @@ class Driver{
     this.id = ++driverId
     store.drivers.push(this)
   }
-  trips(){
-    return store.trips.filter(trips => {
-      if (trips.userId === this.id){
-        return trip
-      }
-    })
-  }
+  
 }
 
 class Passenger{
