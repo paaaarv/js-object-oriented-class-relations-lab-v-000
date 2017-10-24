@@ -6,8 +6,8 @@ class Driver{
     this.id = ++driverId
 
 
-  
+  }
   store(){
-
+    storeArr.push(this)
   }
 }
