@@ -35,6 +35,14 @@ class Passenger{
       return trip.passengerId === this.id
     })
   }
+  drivers(){
+    let newArr= []
+    this.trips().forEach(function(trip){
+      let driver = trip.driver()
+      newArr.push(driver)
+    })
+    return newArr
+  }
 
 }
 
