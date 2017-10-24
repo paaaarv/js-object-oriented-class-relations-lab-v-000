@@ -18,9 +18,12 @@ class Passenger{
     }
 }
 
-class Trip{ 
-  constructor(){
+class Trip{
+  constructor(user){
     this.id = ++tripId
     store.trips.push(this)
+    if (user){
+      this.userId = user.id
+    }
   }
 }
