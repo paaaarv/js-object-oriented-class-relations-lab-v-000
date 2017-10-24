@@ -15,7 +15,12 @@ class Driver{
     })
   }
   passengers(){
-  
+    let newArr = []
+    this.trips().forEach(function(trip){
+      let passenger = trip.passenger()
+      newArr.push(passenger)
+    })
+    return newArr
   }
 }
 
