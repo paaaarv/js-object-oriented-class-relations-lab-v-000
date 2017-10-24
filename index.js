@@ -7,6 +7,7 @@ class Driver{
 
 
   }
+  let storeArr = []
   store(){
     storeArr.push(this)
     return storeArr
