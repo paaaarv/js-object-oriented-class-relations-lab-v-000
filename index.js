@@ -19,11 +19,11 @@ class Passenger{
 }
 
 class Trip{
-  constructor(user){
+  constructor(driver){
     this.id = ++tripId
     store.trips.push(this)
-    if (user){
-      this.userId = user.id
+    if (driver){
+      this.driverId = driver.id
     }
   }
 }
