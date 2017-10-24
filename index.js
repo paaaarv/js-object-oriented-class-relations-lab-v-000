@@ -44,7 +44,7 @@ class Trip{
   }
 // methods for class Trip
   passenger(){
-    return store.trips.find(function(passenger){
+    return store.trips.find(passenger =>{
       return passenger.id === this.passengerId
     })
   }
