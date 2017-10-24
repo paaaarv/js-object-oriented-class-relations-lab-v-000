@@ -9,8 +9,9 @@ class Driver{
     store.drivers.push(this)
   }
   passengers(){
-    return store.passengers.filter(passenger => {
-      return passenger.driverId === this.id
+    let trip = this.trips() 
+    return store.passengers.find(function(passenger){
+      passenger.id ===trip.passengerId
     })
 
   }
