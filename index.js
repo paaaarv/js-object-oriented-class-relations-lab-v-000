@@ -4,11 +4,10 @@ class Driver{
   constructor(name){
     this.name = name
     this.id = ++driverId
-    
 
-  }
-  let storeArr = []
-  store(){ 
-    storeArr.push(this)
+
+  
+  store(){
+
   }
 }
