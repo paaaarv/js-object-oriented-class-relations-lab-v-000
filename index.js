@@ -8,7 +8,7 @@ class Driver{
     this.id = ++driverId
     store.drivers.push(this)
   }
-  
+
 }
 
 class Passenger{
@@ -22,13 +22,13 @@ class Passenger{
 class Trip{
   constructor(driver,passenger){
     this.id = ++tripId
-    store.trips.push(this)
     if (driver){
       this.driverId = driver.id
     }
     if (passenger){
       this.passengerId = passenger.id
     }
+    store.trips.push(this)
   }
   passenger(){
     return store.passengers.find(function(passenger){
