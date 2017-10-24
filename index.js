@@ -9,5 +9,6 @@ class Driver{
   }
   store(){
     storeArr.push(this)
+    return storeArr
   }
 }
