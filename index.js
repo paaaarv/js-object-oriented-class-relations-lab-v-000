@@ -42,8 +42,8 @@ class Trip{
     }
     store.trips.push(this)
   }
-// methods for class Trip 
-  passengers(){}
+// methods for class Trip
+  passenger(){}
 
 
 
