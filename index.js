@@ -43,7 +43,11 @@ class Trip{
     store.trips.push(this)
   }
 // methods for class Trip
-  passenger(){}
+  passenger(){
+    return store.trips.find(function(passenger{
+      return passenger.id === this.passengerId
+    }))
+  }
 
 
 
