@@ -14,7 +14,7 @@ class Driver{
     })
 
   }
-  trips(){ 
+  trips(){
     return store.trips.filter(trip =>{
       return trip.driverId === this.id
     })
@@ -34,8 +34,10 @@ class Passenger{
     })
   }
   drivers(){
-    return store.drivers.filter(driver => {
-      return driver.passengerId === this.id
+    return store.trips.filter(trip => {
+      if(trip.passengerId === this.id){
+        return trip.driver()
+      }
     })
   }
 }
@@ -51,7 +53,11 @@ class Trip{
     }
     store.trips.push(this)
   }
-
+  driver(){
+    return store.drivers.find(function(driver){
+      return driver.id === this.driverId
+    })
+  }
   passenger(){
     return store.passengers.find(function(passenger){
       if (passenger.id === this.passengerId){
