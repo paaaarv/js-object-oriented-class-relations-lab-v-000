@@ -28,7 +28,7 @@ class Passenger{
       return trip.passengerId === this.id
     })
   }
-  
+
 }
 
 class Trip{
@@ -42,5 +42,10 @@ class Trip{
     }
     store.trips.push(this)
   }
+// methods for class Trip 
+  passengers(){}
+
+
+
 
 }
